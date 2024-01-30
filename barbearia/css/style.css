@@ -1,0 +1,167 @@
+:root {
+    --black1: #0b090a;
+    --black2: #161A1D;
+    --white1: #FFFFFF;
+    --white2: #F5F3F4;
+    --wHite3: #D3D3D3;
+    --Red1: #BA181B;
+    --red2:#E5383B;
+}
+
+body {
+    font-family: "Epilogue", sans-serif;
+}
+
+#header-container , #hero-container {
+ background-color:var(--black1);
+ color: var(--white1 );
+ 
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+.header {
+    padding: 24px 72PX;
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+
+.btn { 
+    padding: 20px 40px;
+    color: var(--white1);
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: var(--Red1);
+}
+
+.btn-primary:hover {
+    background-color: var(--red2);
+    cursor: pointer;
+}
+
+.btn-outline {
+    border: 2px solid var(--white1);
+    background-color: transparent;
+    padding: 12px 24px;
+    font-size: 0.8rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero-text, .hero-img {
+    flex: 1; /*dividir os elementos igualmente*/
+}
+
+.hero-img img{
+    max-width: 100%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*alinha os itens ao inicio*/
+    gap: 16px; /*espaçamento entre um elemento e outro*/
+}
+
+.hero-text__title {
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.hero-text__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.service-list {
+    display: flex;
+    margin-top: 48px;
+    gap: 32px; /*espaçamento entre os elementos*/
+}
+
+.service-card {
+    background-color: var(--white2);
+    border: 2px solid var(--wHite3);
+
+}
+
+.service-card img {
+    width: 100%;
+}
+
+#services-container {
+    padding: 96px 72px;
+}
+
+.service-card__text {
+    padding: 32px;
+}
+
+.services-card__text h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.services-card__text p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.overtitle {
+    color: var(--red2);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.title {
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 700;
+}
+
+#location-container {
+    background-color: var(--white2);
+}
+
+#location-container .location {
+    padding: 96px 72px 48px 72px;
+}
+
+footer {
+    background-color: var(--black1);
+    color: var(--white1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48PX 72PX;
+}
+
+.footer-ccopy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
